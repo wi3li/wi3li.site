@@ -5,13 +5,13 @@ FROM node:18-alpine AS build
 WORKDIR /app
 
 # Copiar o package.json e o package-lock.json para instalar as dependências
-COPY package*.json ./
+COPY homepage/package*.json ./
 
 # Instalar as dependências
 RUN npm install
 
 # Copiar o restante dos arquivos do projeto
-COPY . .
+COPY homepage/ .
 
 # Limpar cache e gerar o build para produção
 RUN rm -rf .next && \
@@ -24,7 +24,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copiar o package.json e o package-lock.json
-COPY package*.json ./
+COPY homepage/package*.json ./
 
 # Instalar apenas as dependências de produção
 RUN npm install --production
