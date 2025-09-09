@@ -8,10 +8,9 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Sabrina Silva Ferreira de Lima | Especialista em Redes de Computadores",
+  title: "Portfólio de Sabrina",
   description:
     "Portfólio de Sabrina Silva Ferreira de Lima, especialista em redes de computadores, configuração, manutenção e segurança de redes, com experiência em desenvolvimento web",
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -21,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/cv.png" type="image/png" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
