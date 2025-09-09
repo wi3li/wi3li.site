@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, Download, ArrowDown } from "lucide-react"
+import { Github, Linkedin, Mail, Eye, ArrowDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { AnimatedText, ClientMotion } from "@/components/client-animations"
 
@@ -54,7 +54,7 @@ export function HeroSection() {
                 className="bg-gray-200 hover:bg-gray-300 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white border-0"
               >
                 <Link href="/documents/sabrina-silva-curriculo.pdf" target="_blank">
-                  <Download className="w-4 h-4 mr-2" />
+                  <Eye className="w-4 h-4 mr-2" />
                   Ver Currículo
                 </Link>
               </Button>

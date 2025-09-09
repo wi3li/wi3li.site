@@ -112,7 +112,7 @@ export default function Home() {
                     Configuração e manutenção de redes corporativas, incluindo switches, roteadores e pontos de acesso.
                   </li>
                   <li>Implementação de soluções de segurança de rede e monitoramento de tráfego.</li>
-                  <li>Suporte técnico especializado em infraestrutura de TI para pequenas e médias empresas.</li>
+                  <li>Suporte técnico especializado em infraestrutura de TI para pequenas empresas.</li>
                 </ul>
               </div>
             </AnimatedSection>
@@ -122,9 +122,9 @@ export default function Home() {
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
                     <h3 className="text-xl font-bold">Desenvolvedora Web Junior</h3>
-                    <p className="text-brand-900 dark:text-brand-700 font-medium">Projetos Acadêmicos</p>
+                    <p className="text-brand-900 dark:text-brand-700 font-medium">Freelancer</p>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">2022 - 2023</p>
+                  <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">2024 - Presente</p>
                 </div>
                 <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
                   <li>Desenvolvimento de sites responsivos utilizando HTML5, CSS3 e JavaScript.</li>
@@ -145,71 +145,21 @@ export default function Home() {
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <AnimatedCard delay={0.2}>
-              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardHeader>
-                  <CardTitle>Sistema de Monitoramento de Rede</CardTitle>
-                  <CardDescription>Solução para monitoramento em tempo real</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02]">
-                    <Image
-                      src="/network-monitoring-dashboard.png"
-                      alt="Sistema de Monitoramento"
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-tr from-brand-900/20 to-blue-600/20 opacity-0 hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300">
-                    Desenvolvimento de um sistema web para monitoramento de dispositivos de rede, com alertas em tempo
-                    real e relatórios de performance.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    <Badge
-                      variant="outline"
-                      className="bg-brand-100/50 dark:bg-brand-900/50 hover:bg-brand-200 transition-colors duration-300"
-                    >
-                      HTML/CSS
-                    </Badge>
-                    <Badge
-                      variant="outline"
-                      className="bg-brand-100/50 dark:bg-brand-900/50 hover:bg-brand-200 transition-colors duration-300"
-                    >
-                      JavaScript
-                    </Badge>
-                    <Badge
-                      variant="outline"
-                      className="bg-brand-100/50 dark:bg-brand-900/50 hover:bg-brand-200 transition-colors duration-300"
-                    >
-                      Redes
-                    </Badge>
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button variant="outline" className="w-full relative overflow-hidden group bg-transparent" disabled>
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    <span className="relative z-10">Ver Projeto</span>
-                    <span className="absolute inset-0 bg-brand-900 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
-                  </Button>
-                </CardFooter>
-              </Card>
-            </AnimatedCard>
+
 
             <AnimatedCard delay={0.3}>
               <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
-                  <CardTitle>Portal Corporativo</CardTitle>
-                  <CardDescription>Interface web para gestão interna</CardDescription>
+                  <CardTitle>Subcultura reggae</CardTitle>
+                  <CardDescription>Projeto pessoal</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02]">
-                    <Image src="/corporate-web-portal.jpg" alt="Portal Corporativo" fill className="object-cover" />
+                    <Image src="/fotografia-reggae.webp" alt="Portal Corporativo" fill className="object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-tr from-brand-900/20 to-blue-600/20 opacity-0 hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <p className="text-gray-700 dark:text-gray-300">
-                    Criação de um portal web responsivo para gestão de recursos internos da empresa, com foco na
-                    experiência do usuário e acessibilidade.
+                  Site aonde exploro a subcultura reggae, sua música, valores e influência cultural
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge
@@ -233,11 +183,21 @@ export default function Home() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full relative overflow-hidden group bg-transparent" disabled>
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    <span className="relative z-10">Ver Projeto</span>
-                    <span className="absolute inset-0 bg-brand-900 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
-                  </Button>
+                  <a
+                    href="https://wie3li.site"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button
+                      variant="outline"
+                      className="w-full relative overflow-hidden group bg-transparent"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      <span className="relative z-10">Ver Projeto</span>
+                      <span className="absolute inset-0 bg-brand-900 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
+                    </Button>
+                  </a>
                 </CardFooter>
               </Card>
             </AnimatedCard>
@@ -245,13 +205,13 @@ export default function Home() {
             <AnimatedCard delay={0.4}>
               <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
-                  <CardTitle>Configuração de Rede Empresarial</CardTitle>
-                  <CardDescription>Infraestrutura completa de rede</CardDescription>
+                  <CardTitle>Plataforma de criação Websites</CardTitle>
+                  <CardDescription>Soluções para criação de websites b2b</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02]">
                     <Image
-                      src="/network-infrastructure-diagram.jpg"
+                      src="/nuuvik.webp"
                       alt="Rede Empresarial"
                       fill
                       className="object-cover"
@@ -259,36 +219,39 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-tr from-brand-900/20 to-blue-600/20 opacity-0 hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <p className="text-gray-700 dark:text-gray-300">
-                    Projeto e implementação de infraestrutura de rede para empresa de médio porte, incluindo segmentação
-                    de rede e políticas de segurança.
+                    Auxiliando o time de desenvolvimento da Nuuvik na criação de websites b2b.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge
                       variant="outline"
                       className="bg-brand-100/50 dark:bg-brand-900/50 hover:bg-brand-200 transition-colors duration-300"
                     >
-                      Cisco
+                      UX/UI
                     </Badge>
                     <Badge
                       variant="outline"
                       className="bg-brand-100/50 dark:bg-brand-900/50 hover:bg-brand-200 transition-colors duration-300"
                     >
-                      VLAN
-                    </Badge>
-                    <Badge
-                      variant="outline"
-                      className="bg-brand-100/50 dark:bg-brand-900/50 hover:bg-brand-200 transition-colors duration-300"
-                    >
-                      Segurança
+                      React
                     </Badge>
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full relative overflow-hidden group bg-transparent" disabled>
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    <span className="relative z-10">Ver Projeto</span>
-                    <span className="absolute inset-0 bg-brand-900 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
-                  </Button>
+                  <a
+                    href="https://nuuvik.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button
+                      variant="outline"
+                      className="w-full relative overflow-hidden group bg-transparent"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      <span className="relative z-10">Ver Projeto</span>
+                      <span className="absolute inset-0 bg-brand-900 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
+                    </Button>
+                  </a>
                 </CardFooter>
               </Card>
             </AnimatedCard>
@@ -301,12 +264,11 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02]">
-                    <Image src="/help-desk-support-system.jpg" alt="Sistema Help Desk" fill className="object-cover" />
+                    <Image src="/help-desk-support-system.png" alt="Sistema Help Desk" fill className="object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-tr from-brand-900/20 to-blue-600/20 opacity-0 hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <p className="text-gray-700 dark:text-gray-300">
-                    Desenvolvimento de sistema web para gerenciamento de chamados de suporte técnico, com interface
-                    intuitiva e sistema de priorização.
+                    Desenvolvimento de sistema web para Capacitação de Técnicos N1, N2 e N3 da TVM com trilhas guiadas e material prático.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge
@@ -325,16 +287,26 @@ export default function Home() {
                       variant="outline"
                       className="bg-brand-100/50 dark:bg-brand-900/50 hover:bg-brand-200 transition-colors duration-300"
                     >
-                      Suporte
+                      Redes
                     </Badge>
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full relative overflow-hidden group bg-transparent" disabled>
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    <span className="relative z-10">Ver Projeto</span>
-                    <span className="absolute inset-0 bg-brand-900 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
-                  </Button>
+                  <a
+                    href="https://script4.store/tvm/suporte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button
+                      variant="outline"
+                      className="w-full relative overflow-hidden group bg-transparent"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      <span className="relative z-10">Ver Projeto</span>
+                      <span className="absolute inset-0 bg-brand-900 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
+                    </Button>
+                  </a>
                 </CardFooter>
               </Card>
             </AnimatedCard>
@@ -449,7 +421,7 @@ export default function Home() {
                       variant="secondary"
                       className="justify-center py-2 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors"
                     >
-                      Bootstrap
+                      React
                     </Badge>
                     <Badge
                       variant="secondary"
@@ -463,18 +435,7 @@ export default function Home() {
                     >
                       Git/GitHub
                     </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="justify-center py-2 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors"
-                    >
-                      WordPress
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="justify-center py-2 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors"
-                    >
-                      PHP Básico
-                    </Badge>
+
                   </div>
                 </CardContent>
               </Card>
@@ -510,37 +471,7 @@ export default function Home() {
                       variant="secondary"
                       className="justify-center py-2 hover:bg-green-100 dark:hover:bg-green-900/50 transition-colors"
                     >
-                      Active Directory
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="justify-center py-2 hover:bg-green-100 dark:hover:bg-green-900/50 transition-colors"
-                    >
-                      VMware
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="justify-center py-2 hover:bg-green-100 dark:hover:bg-green-900/50 transition-colors"
-                    >
-                      Backup & Recovery
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="justify-center py-2 hover:bg-green-100 dark:hover:bg-green-900/50 transition-colors"
-                    >
-                      Monitoramento
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="justify-center py-2 hover:bg-green-100 dark:hover:bg-green-900/50 transition-colors"
-                    >
                       Troubleshooting
-                    </Badge>
-                    <Badge
-                      variant="secondary"
-                      className="justify-center py-2 hover:bg-green-100 dark:hover:bg-green-900/50 transition-colors"
-                    >
-                      Documentação
                     </Badge>
                   </div>
                 </CardContent>
@@ -626,6 +557,12 @@ export default function Home() {
                 </Badge>
                 <Badge
                   variant="outline"
+                  className="px-4 py-2 text-sm bg-brand-50 dark:bg-brand-900/20 border-brand-200 dark:border-brand-800 hover:bg-brand-100 dark:hover:bg-brand-900/40 transition-colors"
+                >
+                  GNS3
+                </Badge>
+                <Badge
+                  variant="outline"
                   className="px-4 py-2 text-sm bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors"
                 >
                   Wireshark
@@ -638,46 +575,11 @@ export default function Home() {
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="px-4 py-2 text-sm bg-yellow-50 dark:bg-yellow-900/20 border-yellow-200 dark:border-yellow-800 hover:bg-yellow-100 dark:hover:bg-yellow-900/40 transition-colors"
-                >
-                  Nagios
-                </Badge>
-                <Badge
-                  variant="outline"
                   className="px-4 py-2 text-sm bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors"
                 >
                   pfSense
                 </Badge>
-                <Badge
-                  variant="outline"
-                  className="px-4 py-2 text-sm bg-indigo-50 dark:bg-indigo-900/20 border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/40 transition-colors"
-                >
-                  Ubiquiti
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="px-4 py-2 text-sm bg-pink-50 dark:bg-pink-900/20 border-pink-200 dark:border-pink-800 hover:bg-pink-100 dark:hover:bg-pink-900/40 transition-colors"
-                >
-                  Mikrotik
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="px-4 py-2 text-sm bg-teal-50 dark:bg-teal-900/20 border-teal-200 dark:border-teal-800 hover:bg-teal-100 dark:hover:bg-teal-900/40 transition-colors"
-                >
-                  Zabbix
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="px-4 py-2 text-sm bg-cyan-50 dark:bg-cyan-900/20 border-cyan-200 dark:border-cyan-800 hover:bg-cyan-100 dark:hover:bg-cyan-900/40 transition-colors"
-                >
-                  MySQL
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="px-4 py-2 text-sm bg-violet-50 dark:bg-violet-900/20 border-violet-200 dark:border-violet-800 hover:bg-violet-100 dark:hover:bg-violet-900/40 transition-colors"
-                >
-                  ITIL
-                </Badge>
+
               </div>
             </div>
           </AnimatedSection>
@@ -698,12 +600,12 @@ export default function Home() {
                 <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
                   <div className="flex flex-col md:flex-row justify-between mb-4">
                     <div>
-                      <h4 className="text-xl font-semibold">Tecnologia em Redes de Computadores</h4>
+                      <h4 className="text-xl font-semibold">Curso Superior de Tecnologia em Redes de Computadores</h4>
                       <p className="text-purple-600 dark:text-purple-400">
-                        Instituto Federal de Educação, Ciência e Tecnologia
+                        CENTRO UNIVERSITÁRIO UFBRA
                       </p>
                     </div>
-                    <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">2022 - 2024</p>
+                    <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">2025 - 2028</p>
                   </div>
                   <div>
                     <h5 className="font-medium mb-2">Disciplinas Relevantes:</h5>
@@ -731,8 +633,8 @@ export default function Home() {
                 <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
                   <div className="flex flex-col md:flex-row justify-between mb-4">
                     <div>
-                      <h4 className="text-xl font-semibold">Técnico em Informática para Internet</h4>
-                      <p className="text-purple-600 dark:text-purple-400">Escola Técnica Estadual</p>
+                      <h4 className="text-xl font-semibold">ETEC PARQUE BELÉM</h4>
+                      <p className="text-purple-600 dark:text-purple-400">T.I : Técnico de Informática para Internet.</p>
                     </div>
                     <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">2020 - 2022</p>
                   </div>
@@ -752,33 +654,41 @@ export default function Home() {
           </div>
 
           <div>
-            <AnimatedSection direction="right" delay={0.3}>
-              <h3 className="text-2xl font-bold mb-6">Certificações e Cursos</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
-                  <h4 className="font-semibold">CCNA - Cisco Certified Network Associate</h4>
-                  <p className="text-gray-600 dark:text-gray-400">Fundamentos de redes Cisco e protocolos</p>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
-                  <h4 className="font-semibold">CompTIA Network+</h4>
-                  <p className="text-gray-600 dark:text-gray-400">Certificação em infraestrutura de redes</p>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
-                  <h4 className="font-semibold">Desenvolvimento Web Responsivo - FreeCodeCamp</h4>
-                  <p className="text-gray-600 dark:text-gray-400">HTML, CSS, JavaScript e design responsivo</p>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
-                  <h4 className="font-semibold">ITIL Foundation</h4>
-                  <p className="text-gray-600 dark:text-gray-400">Gerenciamento de serviços de TI</p>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 md:col-span-2 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
-                  <h4 className="font-semibold">Melhor Projeto TCC - Redes de Computadores</h4>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Reconhecimento pelo projeto de implementação de rede empresarial
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
+<AnimatedSection direction="right" delay={0.3}>
+  <h3 className="text-2xl font-bold mb-6">Experiência com Tecnologias de Redes e Virtualização</h3>
+  <div className="space-y-4">
+    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+      <h4 className="font-semibold">Simulações com GNS3</h4>
+      <p className="text-gray-600 dark:text-gray-400">
+        Experiência na criação de laboratórios virtuais usando o GNS3 com imagens reais de roteadores e firewalls Cisco. 
+        Configuração de topologias complexas, incluindo OSPF, VLANs, ACLs, NAT, VPNs e simulações de ambientes corporativos.
+      </p>
+    </div>
+    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+      <h4 className="font-semibold">Cisco Packet Tracer</h4>
+      <p className="text-gray-600 dark:text-gray-400">
+        Utilização do Cisco Packet Tracer para simular redes em ambientes de estudo e ensino. 
+        Criação de cenários com switches, roteadores e dispositivos finais para praticar protocolos como RIP, OSPF, DHCP, STP e redes IPv6.
+      </p>
+    </div>
+    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+      <h4 className="font-semibold">Virtualização com Proxmox</h4>
+      <p className="text-gray-600 dark:text-gray-400">
+        Implantação e gerenciamento de ambientes virtuais usando Proxmox VE. 
+        Criação de máquinas virtuais e containers LXC para testes de redes, servidores e sistemas Linux. 
+        Experiência com snapshots, templates, VLANs e bridges virtuais.
+      </p>
+    </div>
+    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+      <h4 className="font-semibold">Administração de Sistemas com Debian</h4>
+      <p className="text-gray-600 dark:text-gray-400">
+        Instalação e configuração de servidores Linux baseados em Debian para fins de laboratório e uso pessoal. 
+        Experiência com serviços como DHCP, DNS, Apache/Nginx, firewall UFW, SSH, e automação de tarefas com shell script.
+      </p>
+    </div>
+  </div>
+</AnimatedSection>
+
           </div>
         </div>
       </section>
