@@ -1,0 +1,18 @@
+services:
+  frontend:
+    build: ./front-end
+    container_name: wi3li-site-frontend
+    environment:
+      - NODE_ENV=production
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.wi3li-site-frontend.rule=Host(`wi3li.site`)"
+      - "traefik.http.routers.wi3li-site-frontend.entrypoints=web"
+      - "traefik.http.services.wi3li-site-frontend.loadbalancer.server.port=60010"
+    restart: unless-stopped
+    networks:
+      - traefik-net
+
+networks:
+  traefik-net:
+    external: true
