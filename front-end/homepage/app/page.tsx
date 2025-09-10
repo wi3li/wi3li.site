@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, ExternalLink, ChevronRight } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink, ChevronRight, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -184,7 +184,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <a
-                    href="https://wie3li.site"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full"
@@ -563,12 +563,6 @@ export default function Home() {
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="px-4 py-2 text-sm bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors"
-                >
-                  Wireshark
-                </Badge>
-                <Badge
-                  variant="outline"
                   className="px-4 py-2 text-sm bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800 hover:bg-green-100 dark:hover:bg-green-900/40 transition-colors"
                 >
                   PRTG
@@ -636,7 +630,7 @@ export default function Home() {
                       <h4 className="text-xl font-semibold">ETEC PARQUE BELÉM</h4>
                       <p className="text-purple-600 dark:text-purple-400">T.I : Técnico de Informática para Internet.</p>
                     </div>
-                    <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">2020 - 2022</p>
+                    <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">2023 - 2024</p>
                   </div>
                   <div>
                     <h5 className="font-medium mb-2">Disciplinas Relevantes:</h5>
@@ -700,12 +694,12 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8 text-center">Entre em Contato</h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <AnimatedSection direction="left" delay={0.2}>
-              <div className="space-y-6">
+          <div className="flex justify-center">
+            <AnimatedSection delay={0.2}>
+              <div className="space-y-6 text-center max-w-md">
                 <h3 className="text-xl font-semibold">Informações de Contato</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+                  <div className="flex items-center justify-center hover:translate-x-1 transition-transform duration-300">
                     <Mail className="w-5 h-5 text-brand-900 mr-3" />
                     <a
                       href="mailto:sabrina.silva@email.com"
@@ -714,7 +708,7 @@ export default function Home() {
                       sabriina.silva91@gmail.com
                     </a>
                   </div>
-                  <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+                  <div className="flex items-center justify-center hover:translate-x-1 transition-transform duration-300">
                     <Linkedin className="w-5 h-5 text-brand-900 mr-3" />
                     <a
                       href="https://www.linkedin.com/in/sabrinasilvaferreira/"
@@ -725,7 +719,7 @@ export default function Home() {
                       Perfil no LinkedIn
                     </a>
                   </div>
-                  <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+                  <div className="flex items-center justify-center hover:translate-x-1 transition-transform duration-300">
                     <Github className="w-5 h-5 text-brand-900 mr-3" />
                     <a
                       href="https://github.com/wi3li"
@@ -736,6 +730,17 @@ export default function Home() {
                       Perfil no GitHub
                     </a>
                   </div>
+                  <div className="flex items-center justify-center hover:translate-x-1 transition-transform duration-300">
+                    <MessageCircle className="w-5 h-5 text-brand-900 mr-3" />
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=5511942004944&text=Ol%C3%A1+Sabrina%2C+tudo+bem%3F&type=phone_number&app_absent=0"
+                      target="_blank"
+                      className="text-gray-700 dark:text-gray-300 hover:text-brand-900 dark:hover:text-brand-700 transition-colors"
+                      rel="noreferrer"
+                    >
+                      WhatsApp
+                    </a>
+                  </div>
                 </div>
                 <div className="pt-4">
                   <p className="text-gray-700 dark:text-gray-300">
@@ -743,12 +748,6 @@ export default function Home() {
                     para entrar em contato!
                   </p>
                 </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection direction="right" delay={0.3}>
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-                <ContactForm />
               </div>
             </AnimatedSection>
           </div>
@@ -777,6 +776,13 @@ export default function Home() {
                 className="text-gray-400 hover:text-white transition-colors transform hover:scale-110 duration-300"
               >
                 <Github className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://api.whatsapp.com/send/?phone=5511942004944&text=Ol%C3%A1+Sabrina%2C+tudo+bem%3F&type=phone_number&app_absent=0"
+                target="_blank"
+                className="text-gray-400 hover:text-white transition-colors transform hover:scale-110 duration-300"
+              >
+                <MessageCircle className="w-5 h-5" />
               </Link>
               <Link
                 href="mailto:sabrina.silva@email.com"

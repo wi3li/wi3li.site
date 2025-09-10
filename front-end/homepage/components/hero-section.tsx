@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, Eye, ArrowDown } from "lucide-react"
+import { Github, Linkedin, Mail, Eye, ArrowDown, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { AnimatedText, ClientMotion } from "@/components/client-animations"
 
@@ -39,19 +39,19 @@ export function HeroSection() {
               transition={{ delay: 0.8, duration: 0.8 }}
             >
               <Button asChild className="bg-brand-900 hover:bg-brand-800 text-white border-0">
-                <Link href="#contact">Entre em Contato</Link>
+                <Link href="https://wa.me/5511942004944?text=Ol%C3%A1%20Sabrina%2C%20tudo%20bem%3F" target="_blank">Entre em Contato</Link>
               </Button>
               <Button
                 variant="outline"
                 asChild
-                className="border-brand-900 text-brand-900 hover:bg-brand-900 hover:text-white bg-transparent"
+                className="bg-brand-900 hover:bg-brand-800 text-white border-0"
               >
                 <Link href="#projects">Ver Projetos</Link>
               </Button>
               <Button
                 variant="secondary"
                 asChild
-                className="bg-gray-200 hover:bg-gray-300 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white border-0"
+                className="border-brand-900 text-brand-900 hover:bg-brand-900 hover:text-white bg-transparent dark:border-brand-700 dark:text-brand-700 dark:hover:bg-brand-700 dark:hover:text-white"
               >
                 <Link href="/documents/sabrina-silva-curriculo.pdf" target="_blank">
                   <Eye className="w-4 h-4 mr-2" />
@@ -84,6 +84,13 @@ export function HeroSection() {
                 className="text-gray-600 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors transform hover:scale-110 duration-300"
               >
                 <Mail className="w-6 h-6" />
+              </Link>
+              <Link
+                href="https://api.whatsapp.com/send/?phone=5511942004944&text=Ol%C3%A1+Sabrina%2C+tudo+bem%3F&type=phone_number&app_absent=0"
+                target="_blank"
+                className="text-gray-600 hover:text-green-500 dark:text-gray-400 dark:hover:text-green-400 transition-colors transform hover:scale-110 duration-300"
+              >
+                <MessageCircle className="w-6 h-6" />
               </Link>
             </ClientMotion>
           </div>
