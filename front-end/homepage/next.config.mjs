@@ -6,6 +6,12 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  experimental: {
+    optimizeCss: true,
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
   images: {
     unoptimized: false,
     formats: ['image/webp', 'image/avif'],
@@ -37,6 +43,15 @@ const nextConfig = {
       },
       {
         source: '/(.*)\\.(webp|avif|png|jpg|jpeg)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/_next/static/css/(.*)',
         headers: [
           {
             key: 'Cache-Control',
