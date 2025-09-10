@@ -55,7 +55,7 @@ export function Navbar() {
           >
             <Link
               href="/"
-              className="text-xl font-bold bg-gradient-to-r from-brand-900 to-blue-600 bg-clip-text text-transparent"
+              className="text-xl font-bold text-purple-600 dark:text-purple-400 bg-gradient-to-r from-brand-900 to-blue-600 bg-clip-text text-transparent"
             >
               Sabrina Silva
             </Link>

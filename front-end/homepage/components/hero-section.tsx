@@ -19,7 +19,7 @@ export function HeroSection() {
               />
               <AnimatedText
                 text="Especialista em Redes de Computadores"
-                className="text-2xl md:text-3xl font-semibold mt-2 bg-gradient-to-r from-brand-900 to-blue-600 bg-clip-text text-transparent"
+                className="text-2xl md:text-3xl font-semibold mt-2 text-purple-600 dark:text-purple-400 bg-gradient-to-r from-brand-900 to-blue-600 bg-clip-text text-transparent"
                 once={true}
               />
             </div>
@@ -107,11 +107,15 @@ export function HeroSection() {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
               <Image
-                src="/image/profile.png"
+                src="/image/profile.webp"
                 alt="Sabrina Silva Ferreira de Lima"
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 768px) 256px, 320px"
+                quality={85}
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-900/20 to-blue-600/20 mix-blend-overlay" />
             </div>
