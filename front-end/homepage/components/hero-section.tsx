@@ -19,7 +19,7 @@ export function HeroSection() {
               />
               <AnimatedText
                 text="Especialista em Redes de Computadores"
-                className="text-2xl md:text-3xl font-semibold mt-2 text-purple-600 dark:text-purple-400 bg-gradient-to-r from-brand-900 to-blue-600 bg-clip-text text-transparent"
+                className="text-2xl md:text-3xl font-semibold mt-2 gradient-text"
                 once={true}
               />
             </div>
@@ -105,7 +105,7 @@ export function HeroSection() {
               stiffness: 100,
             }}
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl min-h-[256px] md:min-h-[320px]">
               <Image
                 src="/image/profile.webp"
                 alt="Sabrina Silva Ferreira de Lima"

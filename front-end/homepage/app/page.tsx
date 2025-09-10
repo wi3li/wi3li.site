@@ -4,7 +4,6 @@ import { Github, Linkedin, Mail, ExternalLink, ChevronRight, MessageCircle } fro
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ContactForm } from "@/components/contact-form"
 import { Navbar } from "@/components/navbar"
 import { ScrollIndicator } from "@/components/scroll-indicator"
 import { SmoothScroll } from "@/components/smooth-scroll"
@@ -38,7 +37,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8 text-center">Sobre Mim</h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[400px]">
             <AnimatedSection direction="left" delay={0.2}>
               <div className="space-y-4">
                 <p className="text-lg text-gray-700 dark:text-gray-300">
@@ -154,16 +153,17 @@ export default function Home() {
                   <CardDescription>Projeto pessoal</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02]">
+                  <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02] w-full h-[240px] md:h-[270px]">
                     <Image 
                       src="/fotografia-reggae.webp" 
-                      alt="Portal Corporativo" 
+                      alt="Fotografia Reggae" 
                       fill 
                       className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      quality={80}
+                      sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                      quality={75}
                       placeholder="blur"
                       blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                      priority={false}
                     />
                     <div className="absolute inset-0 bg-gradient-to-tr from-brand-900/20 to-blue-600/20 opacity-0 hover:opacity-100 transition-opacity duration-300" />
                   </div>
@@ -218,7 +218,7 @@ export default function Home() {
                   <CardDescription>Soluções para criação de websites b2b</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02]">
+                  <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02] w-full h-[240px] md:h-[270px]">
                     <Image
                       src="/nuuvik.webp"
                       alt="Rede Empresarial"
@@ -276,16 +276,17 @@ export default function Home() {
                   <CardDescription>Plataforma de suporte técnico</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02]">
+                  <div className="aspect-video relative rounded-md overflow-hidden mb-4 bg-gray-100 dark:bg-gray-700 transform transition-transform duration-500 hover:scale-[1.02] w-full h-[240px] md:h-[270px]">
                     <Image 
                       src="/help-desk-support-system.png" 
                       alt="Sistema Help Desk" 
                       fill 
                       className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      quality={80}
+                      sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                      quality={75}
                       placeholder="blur"
                       blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                      priority={false}
                     />
                     <div className="absolute inset-0 bg-gradient-to-tr from-brand-900/20 to-blue-600/20 opacity-0 hover:opacity-100 transition-opacity duration-300" />
                   </div>
