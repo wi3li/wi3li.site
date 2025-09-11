@@ -1,9 +1,11 @@
 import type React from "react"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { AsyncCSSLoader } from "@/components/async-css-loader"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
+import { criticalCSS } from "@/styles/critical-inline"
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -99,11 +101,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{
-          __html: `
-            html { scroll-behavior: smooth; }
-            body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
-            * { box-sizing: border-box; }
-          `
+          __html: criticalCSS
         }} />
         <link rel="preload" href="/image/profile.png" as="image" type="image/png" />
         <link rel="preload" href="/banner.png" as="image" type="image/png" />
@@ -112,6 +110,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={inter.className}>
+        <AsyncCSSLoader />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
           <Toaster />

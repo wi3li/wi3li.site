@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
+    "build": "npm run extract-critical-css && next build",
+    "dev": "npm run extract-critical-css && next dev",
     "lint": "next lint",
     "start": "next start",
-    "optimize-images": "node scripts/optimize-images.js"
+    "optimize-images": "node scripts/optimize-images.js",
+    "extract-critical-css": "node scripts/extract-critical-css.js",
+    "docker-build": "./scripts/docker-build.sh",
+    "docker-build:optimized": "docker build -f Dockerfile.optimized -t wi3li-site:optimized ."
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
