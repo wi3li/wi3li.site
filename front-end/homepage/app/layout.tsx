@@ -103,7 +103,7 @@ export default function RootLayout({
         <style dangerouslySetInnerHTML={{
           __html: criticalCSS
         }} />
-        <link rel="preload" href="/image/profile.png" as="image" type="image/png" />
+        <link rel="preload" href="/image/profile.jpg" as="image" type="image/png" />
         <link rel="preload" href="/banner.png" as="image" type="image/png" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

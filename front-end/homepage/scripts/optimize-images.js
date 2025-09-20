@@ -6,8 +6,8 @@ async function optimizeImages() {
   const publicDir = path.join(__dirname, '../public');
   
   try {
-    // Converter profile.png para WebP
-    const profilePath = path.join(publicDir, 'image/profile.png');
+    // Converter profile.jpg para WebP
+    const profilePath = path.join(publicDir, 'image/profile.jpg');
     const profileWebPPath = path.join(publicDir, 'image/profile.webp');
     
     if (fs.existsSync(profilePath)) {
@@ -22,7 +22,7 @@ async function optimizeImages() {
         })
         .toFile(profileWebPPath);
       
-      console.log('✅ profile.png convertido para WebP');
+      console.log('✅ profile.jpg convertido para WebP');
     }
 
     // Otimizar outras imagens se necessário

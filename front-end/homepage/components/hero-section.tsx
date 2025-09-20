@@ -107,7 +107,7 @@ export function HeroSection() {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl min-h-[256px] md:min-h-[320px]">
               <Image
-                src="/image/profile.png"
+                src="/image/profile.jpg"
                 alt="Sabrina Silva Ferreira de Lima"
                 fill
                 className="object-cover"
